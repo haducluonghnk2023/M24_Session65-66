@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { themeReducer, toggleTheme } from "../store/reducers/themReducer";
+import { toggleTheme } from "../store/reducers/themReducer";
 import React from "react";
 
 const ThemeToggle = () => {
@@ -12,15 +12,15 @@ const ThemeToggle = () => {
     dispatch(toggleTheme());
   };
 
-  //   const themeStyles: React.CSSProperties = {
-  //     backgroundColor: theme === "light" ? "#fff" : "#333",
-  //     color: theme === "light" ? "#000" : "#fff",
-  //     minHeight: "100vh",
-  //     display: "flex",
-  //     justifyContent: "center",
-  //     alignItems: "center",
-  //     flexDirection: "column",
-  //   };
+  // const themeStyles: React.CSSProperties = {
+  //   backgroundColor: theme === "light" ? "#fff" : "#333",
+  //   color: theme === "light" ? "#000" : "#fff",
+  //   minHeight: "100vh",
+  //   display: "flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   flexDirection: "column",
+  // };
 
   return (
     <div>
